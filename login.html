@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="welcome.php"><i class="bi bi-calendar-event"></i> Evenimente - Acasa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="despre-noi-nelogat.html">Despre noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq-nelogat.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-nelogat.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Autentificare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card mx-auto shadow-lg" style="max-width: 500px;">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Autentificare</h3>
+        <form action="login.php" method="POST">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="parola" class="form-label">Parolă</label>
+            <input type="password" class="form-control" id="parola" name="parola" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+
+        <!-- Buton de înregistrare -->
+        <div class="text-center mt-3">
+          <a href="register.html" class="btn btn-success btn-sn w-100">Nu ai cont? Înregistrează-te</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

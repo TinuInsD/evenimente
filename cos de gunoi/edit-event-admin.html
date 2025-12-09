@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Editare Eveniment - Organizator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar Organizator -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard-organizer.html">Organizator Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEdit">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarEdit">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard-organizer.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link active" href="edit-event.html">Editare Eveniment</a></li>
+          <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formular Editare Eveniment -->
+  <div class="container mt-4">
+    <h1>Editare Eveniment</h1>
+    <form action="edit-event-process.html" method="get" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="eventName" class="form-label">Nume Eveniment</label>
+        <input type="text" class="form-control" id="eventName" name="eventName" value="Eveniment 1" required>
+      </div>
+      <div class="mb-3">
+        <label for="eventDescription" class="form-label">Descriere Eveniment</label>
+        <textarea class="form-control" id="eventDescription" name="eventDescription" rows="4" required> </textarea>
+      </div>
+      <!-- Adaugati campuri suplimentare conform necesitatilor -->
+      <button type="submit" class="btn btn-primary">Salveaza Modificarile</button>
+    </form>
+  </div>
+
+  <footer class="bg-secondary text-white text-center py-3 mt-4">
+    <div class="container">&copy; 2025 Evenimente.</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
